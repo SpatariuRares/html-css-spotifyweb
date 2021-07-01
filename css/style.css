@@ -11,6 +11,28 @@
 .wrap{
     flex-wrap: wrap;
 }
+.aling-center{
+    align-items: center;
+}
+.justify-end{
+    justify-content: flex-end;
+}
+
+.margin-t20{
+    margin-top: 20px;
+}
+
+.color-white{
+    color: rgb(255, 255, 255);
+}
+
+.firstupper{
+    text-transform: capitalize;
+}
+
+.fs25{
+    font-size: 25px;
+}
 /* common */
 
 /* .container */
@@ -20,16 +42,89 @@
     height: 100vh;
     width: 100%;
 }
-
+/* nav */
 .container nav{
     width: 300px;
-    height: calc(100% - 100px);
+    height: calc(100% - 100px);   
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
 }
 
+.container nav>*{
+    padding: 0 20px;
+}
+
+
+.container #logo{
+    width: 70%;
+}
+
+.gray *,.gray{
+    color: white;
+    filter: invert(0.5);
+}
+
+.container nav .home .icon{
+    width: 30px;
+}
+
+.container nav ul{
+    list-style: none;
+}
+
+.container nav .playlist *{
+    margin: 10px 0;
+}
+
+
+
+.container nav .playlist .fa-plus{
+    padding: 8px;
+    background-color: gray;
+    color: red;
+}
+
+.container nav .account{
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 40px);
+    background-color: red;
+}
+
+.container nav .account>div:first-child{
+    border-bottom: 1px solid gray;
+    padding: 5px 0;
+}
+
+.container nav .account .fa-user-circle{
+    background-color: gray;
+    border-radius: 50%;
+}
+
+
+/* nav */
+/* main */
 .container main{
     width: calc(100% - 300px);
     height: calc(100% - 100px);
 }
+
+main .top{
+    height: 100px;
+    background-color: royalblue;
+    width: 100%;
+}
+
+main .top .paga{
+    padding: 5px 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+/* main */
+
 
 .container footer{
     width: 100%;
