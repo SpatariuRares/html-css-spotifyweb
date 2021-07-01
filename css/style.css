@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* common */
+.flex{
+    display: flex;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+/* common */
+
+/* .container */
+
+/* .container */
+.container{
+    height: 100vh;
+    width: 100%;
+}
+
+.container nav{
+    width: 300px;
+    height: calc(100% - 100px);
+}
+
+.container main{
+    width: calc(100% - 300px);
+    height: calc(100% - 100px);
+}
+
+.container footer{
+    width: 100%;
+    height: 100px;
+}
+
+
+/* debug */
+.debug .container{
+    background-color: aqua;
+}
+
+.debug nav{
+    background-color: red;
+}
+.debug main{
+    background-color: rgb(150, 45, 45);
+}
+
+.debug footer{
+    background-color: rgb(45, 125, 150);
+}
+/* debug */
