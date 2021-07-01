@@ -56,7 +56,7 @@
 
 
 
-@media (max-width:900px) {
+@media (max-width:1100px) {
     main .bottom .song{
         width: calc((100% / 4) - 10px);
     }
