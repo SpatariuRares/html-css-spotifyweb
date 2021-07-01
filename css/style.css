@@ -166,8 +166,10 @@ body{
     background-color: black;
 }
 
+
 .container nav .account>a:first-child{
     padding: 5px 0;
+    fill: #7A7D81;
 }
 
 .container nav .account>div:last-child{
