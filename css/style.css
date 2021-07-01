@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 /* common */
 .flex{
     display: flex;
@@ -50,29 +53,41 @@
 .fs10{
     font-size: 10px;
 }
-/* common */
 
-/* .container */
-
-/* .container */
-.container{
-    height: 100vh;
-    width: 100%;
-}
-/* nav */
-.container nav{
-    width: 300px;
-    height: calc(100% - 100px);   
-    position: relative;
-    overflow: hidden;
-    padding: 20px 0;
-}
 .height100{
     height: 100% ;   
 }
 .margin5{
     margin: 0 10px;
 }
+
+.white-gray{
+    color: white;
+    filter: invert(0.5);
+}
+
+.gray{
+    color: #7A7D81;
+}
+/* common */
+
+/* .container */
+
+.container{
+    height: 100vh;
+    width: 100%;
+}
+/* nav */
+.container nav{
+    width: 220px;
+    height: calc(100% - 100px);   
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+    background-color: black;
+    font-size: 12px;
+}
+
 
 .container nav>*{
     padding: 0 20px;
@@ -83,17 +98,18 @@
     width: 70%;
 }
 
-.white-gray *,.white-gray{
-    color: white;
-    filter: invert(0.5);
-}
 
-.gray{
-    color: gray;
-}
 
 .container nav .home .icon{
-    width: 30px;
+    width: 26px;
+}
+
+.container nav .home li p{
+    margin-left: 10px;
+}
+
+.container nav .home li a{
+    text-decoration: none;
 }
 
 .container nav ul{
@@ -109,14 +125,14 @@
 .container nav .playlist .fa-plus{
     padding: 8px;
     background-color: gray;
-    color: red;
+    color: black;
 }
 
 .container nav .account{
     position: absolute;
     bottom: 0;
     width: calc(100% - 40px);
-    background-color: red;
+    background-color: black;
 }
 
 .container nav .account>div:first-child{
@@ -124,24 +140,38 @@
     padding: 5px 0;
 }
 
-.container nav .account .fa-user-circle{
+.container nav .account .icon{
+    aspect-ratio: 1/1;
+    width: 25px;
     background-color: gray;
     border-radius: 50%;
+}
+
+.container nav .account .install{
+    aspect-ratio: 1/1;
+    width: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 
 /* nav */
 /* main */
 .container main{
-    width: calc(100% - 300px);
+    width: calc(100% - 220px);
     height: calc(100% - 100px);
+    overflow-y: scroll;
+    background-color: #141922;
 }
 
 main .top{
     height: 100px;
-    background-color: rgba(62, 98, 207, 0.493);
-    width: calc(100% - 300px);
+    background-color:rgba(0, 2, 8, 0.6);
+    width: calc(100% - 220px);
     position: fixed;
+    top: 0;
+    right: 0;
+    padding-right: 20px;
 }
 
 main .top .paga{
@@ -163,7 +193,6 @@ main .bottom #tag ul li{
 main .bottom {
     padding: 10px;
     margin-top: 100px;
-    overflow-y: scroll;
     height: calc(100% - 100px);
 }
 
@@ -179,6 +208,7 @@ main .bottom .song{
     width: calc((100% / 6) - 10px);
     min-width: 200px;
     margin-right: 10px;
+    text-align: center;
 }
 main .bottom  .song img{
     width:100%;
@@ -194,6 +224,10 @@ main .bottom #artist .song img{
 .container footer{
     width: 100%;
     height: 100px;
+	position: fixed;
+	bottom: 0;
+	z-index: 999;
+    background-color: #282828;
 }
 
 footer >div:first-child,
@@ -249,13 +283,6 @@ footer #play {
 }
 
 .debug nav{
-    background-color: red;
-}
-.debug main{
-    background-color: rgb(150, 45, 45);
-}
-
-.debug footer{
-    background-color: rgb(45, 125, 150);
+    background-color: black;
 }
 /* debug */
