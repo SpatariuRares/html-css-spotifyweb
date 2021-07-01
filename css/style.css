@@ -260,7 +260,6 @@ main .bottom #tag ul li{
 
 main .bottom .song{
     width: calc((100% / 6) - 10px);
-    min-width: 150px;
     margin-right: 10px;
     text-align: center;
 }

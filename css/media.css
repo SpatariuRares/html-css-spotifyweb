@@ -52,3 +52,18 @@
         display: none;
     }
 }
+
+
+
+
+@media (max-width:900px) {
+    main .bottom .song{
+        width: calc((100% / 4) - 10px);
+    }
+}
+
+@media (max-width:700px) {
+    main .bottom .song{
+        width: calc((100% / 2) - 10px);
+    }
+}
