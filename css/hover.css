@@ -1,4 +1,4 @@
-.container .bottom #recently .song:hover img{
+.container .bottom  .song:hover img{
     filter: grayscale(63%) brightness(64%);
 }
 
