@@ -12,6 +12,10 @@ body{
     display: flex;
 }
 
+.fs-12{
+    font-size: 12px;
+}
+
 .column{
     flex-direction: column;
 }
@@ -44,6 +48,13 @@ body{
     margin-top: 20px;
 }
 
+.margin-t10{
+    margin-top: 10px;
+}
+
+.padding-b40{
+    padding-bottom: 40px;
+}
 .padding-t20{
     padding-top: 20px;
 }
@@ -64,6 +75,11 @@ body{
 .fs25{
     font-size: 25px;
 }
+
+.fs18{
+    font-size: 18px;
+}
+
 .fs10{
     font-size: 10px;
 }
