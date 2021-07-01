@@ -8,6 +8,11 @@
 .flex{
     display: flex;
 }
+
+.column{
+    flex-direction: column;
+}
+
 .wrap{
     flex-wrap: wrap;
 }
@@ -17,6 +22,10 @@
 .justify-end{
     justify-content: flex-end;
 }
+.justify-between{
+    justify-content: space-between;
+}
+
 
 .margin-t20{
     margin-top: 20px;
@@ -30,8 +39,16 @@
     text-transform: capitalize;
 }
 
+.allupper{
+    text-transform: uppercase;
+}
+
+
 .fs25{
     font-size: 25px;
+}
+.fs10{
+    font-size: 10px;
 }
 /* common */
 
@@ -50,6 +67,12 @@
     overflow: hidden;
     padding: 20px 0;
 }
+.height100{
+    height: 100% ;   
+}
+.margin5{
+    margin: 0 10px;
+}
 
 .container nav>*{
     padding: 0 20px;
@@ -60,9 +83,13 @@
     width: 70%;
 }
 
-.gray *,.gray{
+.white-gray *,.white-gray{
     color: white;
     filter: invert(0.5);
+}
+
+.gray{
+    color: gray;
 }
 
 .container nav .home .icon{
@@ -112,8 +139,9 @@
 
 main .top{
     height: 100px;
-    background-color: royalblue;
-    width: 100%;
+    background-color: rgba(62, 98, 207, 0.493);
+    width: calc(100% - 300px);
+    position: fixed;
 }
 
 main .top .paga{
@@ -122,15 +150,98 @@ main .top .paga{
     border-radius: 20px;
     text-transform: uppercase;
 }
+main .bottom #tag{
+    text-align: center;
+}
+
+main .bottom #tag ul,
+main .bottom #tag ul li{
+    display: inline-block;
+}
+
+
+main .bottom {
+    padding: 10px;
+    margin-top: 100px;
+    overflow-y: scroll;
+    height: calc(100% - 100px);
+}
+
+main .bottom #tag ul li{
+    padding: 5px 10px;
+}
+
+main .bottom #tag ul li{
+    padding: 5px 10px;
+}
+
+main .bottom .song{
+    width: calc((100% / 6) - 10px);
+    min-width: 200px;
+    margin-right: 10px;
+}
+main .bottom  .song img{
+    width:100%;
+    aspect-ratio: 1/1;
+}
+main .bottom #artist .song img{
+    border-radius: 50%;
+}
 
 /* main */
-
+/* footer */
 
 .container footer{
     width: 100%;
     height: 100px;
 }
 
+footer >div:first-child,
+footer >div:last-child{
+    height: 80%;
+    margin: 0 20px;
+}
+footer div:first-child>img {
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+footer .progress-bar>*{
+    display: inline-block;
+}
+
+footer .bar {
+    height: 5px;
+    background-color: gray;
+    position: relative;
+}
+
+footer .sound .bar {
+    width: 5vw;
+}
+
+footer .progress-bar .bar {
+    width: 25vw;
+}
+footer .progress {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 20%;
+    height: 5px;
+}
+
+footer .play-buttons {
+    text-align: center;
+}
+
+footer .play-buttons *{
+    padding: 10px;
+}
+
+footer #play {
+     color: white;
+}
+/* footer */
 
 /* debug */
 .debug .container{
