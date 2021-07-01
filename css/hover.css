@@ -1,0 +1,62 @@
+.container .bottom #recently .song:hover img{
+    filter: grayscale(63%) brightness(64%);
+}
+
+.container .bottom  .song .image{
+    position: relative;
+}
+
+.container .bottom #recently .song:hover .image:after,
+.container .bottom #create .song:hover .image:after{
+    font-weight: 400;
+    font-family: "Font Awesome 5 Free";
+    content: "\f144";
+    color: white;
+    font-size: 50px;
+    position: absolute;
+}
+
+
+main .paga:hover{
+    font-size: 20px;
+}
+
+main .gray:hover,
+nav .gray:hover{
+    color: white;
+}
+nav .gray:hover path{
+    fill: white ;
+}
+
+
+.gray:hover .fa-plus{
+     background-color: white !important;
+}
+
+footer div:first-child .gray:hover{
+    color: white;
+}
+
+footer div:first-child span.gray:hover{
+    text-decoration: underline;
+}
+
+footer .bar:hover .progress{
+    background-color: #ADFF2F;
+}
+
+footer .bar:hover .progress::after {
+	content: "";
+	display: inline-block;
+	height: 10px;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	background-color: white;
+	position: absolute;
+	right: -5px;
+}
+
+footer .play-buttons i:hover {
+	transform: scale(1.2);
+}

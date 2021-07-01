@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/media.css">
     <title>spotify</title>
 </head>
 
@@ -46,9 +48,9 @@
                     PLAYLIST
                 </h3>
                 <ul>
-                    <li class="create">
+                    <li class="create gray">
                         <i class="fas fa-plus"></i>
-                        <span class="gray">
+                        <span>
                             crea una playlist
                         </span>
                     </li>
@@ -151,45 +153,61 @@
                 <h2 class="margin-t20 color-white">Recently</h2>
                 <div id="recently" class="flex wrap margin-t20">
                     <div class="song flex column ">
-                        <img src="img/metal_lifting.jpg" alt="">
+                        <div class="image flex justify-center aling-center">
+                            <img src="img/metal_lifting.jpg" alt="">
+                        </div>
                         <h3 class="firstupper margin-t20 color-white">Heavy Metal</h3>
                         <div class="firstupper margin-t20 gray">Subtitle</div>
                     </div>
                     <div class="song flex column ">
-                        <img src="img/stranger.jpeg" alt="">
+                        <div class="image flex justify-center aling-center">
+                            <img src="img/stranger.jpeg" alt="">
+                        </div>
                         <h3 class="firstupper margin-t20 color-white">Stranger Things, Vol. 1 (a Netflix Original Serie Soundtrack)</h3>
                         <div class="firstupper margin-t20 gray">Kyle Dixon & Michael Stein</div>
                     </div>
                     <div class="song flex column ">
-                        <img src="img/aquietplace.jpeg" alt="">
+                        <div class="image flex justify-center aling-center">
+                            <img src="img/aquietplace.jpeg" alt="">
+                        </div>
                         <h3 class="firstupper margin-t20 color-white">A quiet place</h3>
                         <div class="firstupper margin-t20 gray">Subtitle</div>
                     </div>
                     <div class="song flex column ">
-                        <img src="img/split.jpeg" alt="">
+                        <div class="image flex justify-center aling-center">
+                            <img src="img/split.jpeg" alt="">
+                        </div>
                         <h3 class="firstupper margin-t20 color-white">Split</h3>
                         <div class="firstupper margin-t20 gray">Subtitle</div>
                     </div>
                     <div class="song flex column ">
-                        <img src="img/cure.jpeg" alt="">
+                        <div class="image flex justify-center aling-center">
+                            <img src="img/cure.jpeg" alt="">
+                        </div>
                         <h3 class="firstupper margin-t20 color-white">A cure for wellness</h3>
                         <div class="firstupper margin-t20 gray">Subtitle</div>
                     </div>
                     <div class="song flex column ">
-                        <img src="img/sinister.jpeg" alt="">
+                        <div class="image flex justify-center aling-center">
+                            <img src="img/sinister.jpeg" alt="">
+                        </div>
                         <h3 class="firstupper margin-t20 color-white">Sinister</h3>
                         <div class="firstupper margin-t20 gray">Subtitle</div>
                     </div>
                 </div>
-                <h2 class="margin-t20 color-white">creato per te</h2>
+                <h2 class="margin-t20 color-white">creato per Joan Doe</h2>
                 <span class="margin-t20 gray"></span>
                 <div id="create" class="flex wrap margin-t20">
                     <div class="song flex column ">
-                        <img src="img/radar.jpeg" alt="">
+                        <div class="image flex justify-center aling-center">
+                            <img src="img/radar.jpeg" alt="">
+                        </div>
                         <h3 class="firstupper margin-t20 color-white">Release Radar</h3>
                     </div>
                     <div class="song flex column ">
-                        <img src="img/mixdaily.jpeg" alt="">
+                        <div class="image flex justify-center aling-center">
+                            <img src="img/mixdaily.jpeg" alt="">
+                        </div>
                         <h3 class="firstupper margin-t20 color-white">Daily Mix 1</h3>
                     </div>
                 </div>
@@ -205,6 +223,7 @@
                 </div>
             </div>
         </main>
+
         <footer class="flex aling-center justify-between">
             <div class="flex aling-center justify-between">
                 <div class="flex aling-center height100">
@@ -214,23 +233,23 @@
                         <span class="firstupper margin5 gray">brano nome</span>
                     </div>
                 </div>
-                <div class="flex aling-center">
+                <div class="flex aling-center wrap">
                     <i class="far fa-heart  margin5 gray"></i>
                     <i class="far fa-folder margin5 gray"></i>
                 </div>
             </div>
             <div>
-                <div class="play-buttons">
-                    <i class="fas fa-random gray"></i>
-                    <i class="fas fa-step-backward gray" ></i>
+                <div class="play-buttons flex aling-center justify-center">
+                    <i class="fas fa-random color-white "></i>
+                    <i class="fas fa-step-backward color-white " ></i>
                     <i id="play" class="far fs25 fa-play-circle"></i>
-                    <i class="fas fa-step-forward gray"></i>
-                    <i class="fas fa-undo-alt gray"></i>
+                    <i class="fas fa-step-forward color-white "></i>
+                    <i class="fas fa-undo-alt color-white "></i>
                 </div>
                 <div class="progress-bar gray fs10">
                     0:25
                     <div class="bar">
-                        <div class="progress "></div>
+                        <div class="progress flex aling-center"></div>
                     </div>
                     4:35
                 </div>
@@ -241,7 +260,7 @@
                 <i class="fas margin5 fa-volume-up color-white"></i>
                 <div class="sound">
                     <div class="bar">
-                        <div class="progress "></div>
+                        <div class="progress flex aling-center"></div>
                     </div>
                 </div>
             </div>

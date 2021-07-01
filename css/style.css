@@ -28,7 +28,9 @@ body{
 .justify-between{
     justify-content: space-between;
 }
-
+.justify-center{
+    justify-content: center;
+}
 
 .container a{
     text-decoration: none;
@@ -185,6 +187,7 @@ main .top{
     background-color:rgba(0, 2, 8, 0.6);
     width: calc(100% - 220px);
     position: fixed;
+    z-index: 99;
     top: 0;
     right: 0;
     padding-right: 20px;
@@ -282,6 +285,7 @@ footer .bar {
     height: 5px;
     background-color: gray;
     position: relative;
+    border-radius: 5px;
 }
 
 footer .sound .bar {
@@ -296,6 +300,7 @@ footer .progress {
     background-color: rgb(255, 255, 255);
     width: 20%;
     height: 5px;
+    border-radius: 5px;
 }
 
 footer .play-buttons {
@@ -312,11 +317,5 @@ footer #play {
 /* footer */
 
 /* debug */
-.debug .container{
-    background-color: aqua;
-}
 
-.debug nav{
-    background-color: black;
-}
 /* debug */
