@@ -40,6 +40,10 @@ body{
     margin-top: 20px;
 }
 
+.padding-t20{
+    padding-top: 20px;
+}
+
 .color-white{
     color: rgb(255, 255, 255);
 }
@@ -97,8 +101,13 @@ body{
 .container nav  li,
 .container nav  h3,
 .container nav  .account,
-.container nav #logo{
-    padding-left:  15px;
+.container nav #logo,
+.container nav #logo-small{
+    padding: 0 15px;
+}
+
+.find600{
+    display: none;
 }
 
 .container #logo{
@@ -149,14 +158,19 @@ body{
 .container nav .account{
     position: absolute;
     bottom: 0;
-    width: calc(100% - 40px);
+    width: calc(100%);
     background-color: black;
 }
 
 .container nav .account>a:first-child{
-    border-bottom: 1px solid gray;
     padding: 5px 0;
 }
+
+.container nav .account>div:last-child{
+    border-top: 1px solid #7A7D81;
+}
+
+
 
 .container nav .account .icon{
     aspect-ratio: 1/1;
@@ -172,6 +186,9 @@ body{
     margin-right: 10px;
 }
 
+html body.debug div.container.flex.wrap nav div.account a.gray.flex.aling-center svg.install{
+    fill: #7A7D81;
+}
 
 /* nav */
 /* main */
@@ -243,7 +260,7 @@ main .bottom #tag ul li{
 
 main .bottom .song{
     width: calc((100% / 6) - 10px);
-    min-width: 200px;
+    min-width: 150px;
     margin-right: 10px;
     text-align: center;
 }
