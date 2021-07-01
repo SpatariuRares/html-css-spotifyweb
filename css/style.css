@@ -129,11 +129,11 @@ body{
     fill:  #7A7D81;
 }
 
-.container nav .home #curent{
+.container nav .home .curent{
     border-left: 2px solid #ADFF2F;;
 }
 
-.container nav .home #curent .gray{
+.container nav .home .curent .gray{
     color: white;
     fill:  white;
 }
@@ -236,12 +236,12 @@ main .bottom #tag ul li{
     padding: 5px 10px;
 }
 
-main .bottom #tag ul li #curent{
+main .bottom #tag ul li .curent{
     position: relative;
     text-align: center;
 }
 
-main .bottom #tag ul li #curent::after{
+main .bottom #tag ul li .curent::after{
     content: "";
     margin-top: 5px;
     display:block;
