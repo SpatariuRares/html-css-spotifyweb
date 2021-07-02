@@ -67,3 +67,10 @@
         width: calc((100% / 2) - 10px);
     }
 }
+
+@media (max-width:300px) {
+    main .bottom .song{
+        width: calc((100% / 1) - 10px);
+    }
+}
+
