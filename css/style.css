@@ -110,7 +110,7 @@ body{
 
 .he50{
     height: calc(100% - 190px);
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .he25{
@@ -525,7 +525,24 @@ footer .play-buttons i:hover {
 }
 
 /*scroll*/
+.he50{
+  scrollbar-width: thin;
+  scrollbar-color: blue orange;
+}
 
+.he50::-webkit-scrollbar {
+  width: 12px;
+}
+
+.he50::-webkit-scrollbar-track {
+  background: orange;
+}
+
+.he50::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 20px;
+  border: 3px solid orange;
+}
 
 
 /* @media */
