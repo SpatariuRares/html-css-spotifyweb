@@ -29,6 +29,7 @@ body{
 .aling-center{
     align-items: center;
 }
+
 .justify-end{
     justify-content: flex-end;
 }
@@ -99,6 +100,27 @@ body{
     filter: invert(0.5);
 }
 
+.he170{
+    height: calc(170px);
+}
+
+.he80{
+    height: calc(100% - 80px);
+}
+
+.he50{
+    height: calc(100% - 190px);
+    overflow-y: scroll;
+}
+
+.he25{
+    height: calc(25% - 20px);
+}
+
+.he10{
+    height: 10%;
+}
+
 .gray{
     color: #7A7D81;
 }
@@ -130,10 +152,9 @@ nav .gray:hover path{
 /* nav */
 .container nav{
     width: 220px;
-    height: calc(100% - 100px);   
-    position: relative;
+    height: calc(100% - 100px);
     overflow: hidden;
-    padding: 20px 0;
+    padding: 20px 0 0 0 ;
     background-color: black;
     font-size: 12px;
 }
@@ -196,10 +217,9 @@ nav .gray:hover path{
 }
 
 .container nav .account{
-    position: absolute;
-    bottom: 0;
     width: calc(100%);
     background-color: black;
+    height: 80px;
 }
 
 
@@ -455,7 +475,7 @@ footer .play-buttons i:hover {
 	    border: 0px;
     }
     .container nav .account {
-	    width: calc(100% - 16px);
+	    width: calc(100%);
     }
     .container nav .account > a:first-child {
 	justify-content: center;
@@ -503,6 +523,8 @@ footer .play-buttons i:hover {
         width: calc((100% / 1) - 10px);
     }
 }
+
+/*scroll*/
 
 
 
