@@ -527,22 +527,25 @@ footer .play-buttons i:hover {
 /*scroll*/
 .he50{
   scrollbar-width: thin;
-  scrollbar-color: blue orange;
+  scrollbar-color: rgb(255, 255,rgba(0, 0, 0, 0.055), 255, 0.055);
+  margin: 3px;
 }
 
 .he50::-webkit-scrollbar {
-  width: 12px;
+  width: 6px;
+  border-radius: 3px;
+  margin-right: 2px;
 }
 
 .he50::-webkit-scrollbar-track {
-  background: orange;
+  background: rgb(0, 0, 0);
 }
 
 .he50::-webkit-scrollbar-thumb {
-  background-color: blue;
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
-  border: 3px solid orange;
 }
+
 
 
 /* @media */
