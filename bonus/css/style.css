@@ -575,8 +575,10 @@ main>.bottom{
 @keyframes b-navigazione{
     0%{
         bottom: -100%;
+        overflow: hidden;   
     }
     100%{
+        overflow: hidden;
         bottom: 0;
     }
 }
