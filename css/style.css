@@ -130,10 +130,14 @@ main .paga:hover{
 }
 
 main .gray:hover,
-nav .gray:hover{
+nav .gray:hover,
+main .gray:focus,
+nav .gray:focus{
     color: white;
 }
-nav .gray:hover path{
+
+nav .gray:hover path,
+nav .gray:focus path{
     fill: white ;
 }
 
