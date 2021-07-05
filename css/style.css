@@ -106,6 +106,7 @@ body{
 
 .he80{
     height: calc(100% - 80px);
+    min-height: 200px;
 }
 
 .he50{
@@ -500,7 +501,7 @@ footer .play-buttons i:hover {
 	    width: 100%; 
     }
 }
-
+/* 
 @media(max-height:400px){
     .hidenh400{
         display: none;
@@ -508,7 +509,7 @@ footer .play-buttons i:hover {
     .he80 {
         height: calc(100%);
     }
-}
+} */
 
 
 
