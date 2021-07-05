@@ -1,0 +1,562 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+/* common */
+.flex{
+    display: flex;
+}
+
+
+
+.column{
+    flex-direction: column;
+}
+
+.float-left{
+    float: left;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+.aling-center{
+    align-items: center;
+}
+
+.justify-end{
+    justify-content: flex-end;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+
+.container a{
+    text-decoration: none;
+}
+
+.margin-t20{
+    margin-top: 20px;
+}
+
+.margin-t10{
+    margin-top: 10px;
+}
+
+.padding-b40{
+    padding-bottom: 40px;
+}
+.padding-t20{
+    padding-top: 20px;
+}
+
+.color-white{
+    color: rgb(255, 255, 255);
+}
+
+.firstupper{
+    text-transform: capitalize;
+}
+
+.allupper{
+    text-transform: uppercase;
+}
+.fs30{
+    font-size: 30px;
+}
+
+.fs25{
+    font-size: 25px;
+}
+
+.fs18{
+    font-size: 18px;
+}
+.fs12{
+    font-size: 12px;
+}
+.fs10{
+    font-size: 10px;
+}
+
+.height100{
+    height: 100% ;   
+}
+.margin5{
+    margin: 0 10px;
+}
+
+.white-gray{
+    color: white;
+    filter: invert(0.5);
+}
+
+.he170{
+    height: calc(170px);
+}
+
+.he80{
+    height: calc(100% - 80px);
+    min-height: 200px;
+}
+
+.he50{
+    height: calc(100% - 190px);
+    overflow-y: auto;
+}
+
+.he25{
+    height: calc(25% - 20px);
+}
+
+.he10{
+    height: 10%;
+}
+
+.gray{
+    color: #7A7D81;
+}
+
+main .paga:hover{
+    font-size: 20px;
+}
+
+main .gray:hover,
+nav .gray:hover,
+main .gray:focus,
+nav .gray:focus{
+    color: white;
+}
+
+nav .gray:hover path,
+nav .gray:focus path{
+    fill: white ;
+}
+
+
+.gray:hover .fa-plus{
+     background-color: white !important;
+}
+/* common */
+
+/* .container */
+
+.container{
+    height: 100vh;
+    width: 100%;
+}
+/* nav */
+.container nav{
+    width: 220px;
+    height: calc(100% - 100px);
+    overflow: hidden;
+    padding: 20px 0 0 0 ;
+    background-color: black;
+    font-size: 12px;
+}
+
+.container nav  li,
+.container nav  h3,
+.container nav  .account,
+.container nav #logo,
+.container nav #logo-small{
+    padding: 0 15px;
+}
+
+.find600{
+    display: none;
+}
+
+.container #logo{
+    width: 70%;
+}
+
+
+
+.container nav .home .icon{
+    width: 26px;
+}
+
+.container nav .home li p{
+    margin-left: 10px;
+}
+
+.container nav .home li a{
+    margin: 10px  0;
+    fill:  #7A7D81;
+}
+
+.container nav .home .curent{
+    border-left: 2px solid #ADFF2F;;
+}
+
+.container nav .home .curent .gray{
+    color: white;
+    fill:  white;
+}
+
+.container nav ul{
+    list-style: none;
+}
+
+.container nav .playlist *{
+    margin: 8px 0;
+}
+
+
+
+
+.container nav .playlist .fa-plus{
+    padding: 8px;
+    background-color: gray;
+    color: black;
+}
+
+.container nav .account{
+    width: calc(100%);
+    background-color: black;
+    height: 80px;
+}
+
+
+.container nav .account>a:first-child{
+    padding: 5px 0;
+    fill: #7A7D81;
+}
+
+.container nav .account>div:last-child{
+    border-top: 1px solid #7A7D81;
+}
+
+
+
+.container nav .account .icon{
+    aspect-ratio: 1/1;
+    width: 25px;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+.container nav .account .install{
+    aspect-ratio: 1/1;
+    width: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+html body.debug div.container.flex.wrap nav div.account a.gray.flex.aling-center svg.install{
+    fill: #7A7D81;
+}
+
+/* nav */
+/* main */
+.container main{
+    width: calc(100% - 220px);
+    height: calc(100% - 100px);
+    overflow-y: scroll;
+    background-color: #141922;
+}
+
+main .top{
+    height: 100px;
+    background-color:rgba(0, 2, 8, 0.6);
+    width: calc(100% - 220px);
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    right: 0;
+    padding-right: 20px;
+}
+
+main .top .paga{
+    padding: 5px 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+main .bottom #tag{
+    text-align: center;
+}
+
+main .bottom #tag ul,
+main .bottom #tag ul li{
+    display: inline-block;
+}
+
+
+main .bottom {
+    padding: 10px;
+    margin-top: 100px;
+    height: calc(100% - 100px);
+}
+
+main .bottom #tag ul li{
+    padding: 5px 10px;
+}
+
+main .bottom #tag ul li .curent{
+    position: relative;
+    text-align: center;
+}
+
+main .bottom #tag ul li .curent::after{
+    content: "";
+    margin-top: 5px;
+    display:block;
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: yellow;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50% , 0);
+}
+
+main .bottom #tag ul li{
+    padding: 5px 10px;
+}
+
+main .bottom .song{
+    width: calc((100% / 6) - 10px);
+    margin-right: 10px;
+    text-align: center;
+}
+main .bottom  .song img{
+    width:100%;
+    aspect-ratio: 1/1;
+}
+main .bottom #artist .song img{
+    border-radius: 50%;
+}
+
+.container .bottom  .song:hover img{
+    filter: grayscale(63%) brightness(64%);
+}
+
+.container .bottom  .song .image{
+    position: relative;
+}
+
+.container .bottom #recently .song:hover .image:after,
+.container .bottom #create .song:hover .image:after{
+    font-weight: 400;
+    font-family: "Font Awesome 5 Free";
+    content: "\f144";
+    color: white;
+    font-size: 50px;
+    position: absolute;
+}
+
+
+/* main */
+/* footer */
+
+.container footer{
+    width: 100%;
+    height: 100px;
+	position: fixed;
+	bottom: 0;
+	z-index: 999;
+    background-color: #282828;
+}
+
+footer >div:first-child,
+footer >div:last-child{
+    height: 36%;
+    margin: 0 20px;
+}
+footer div:first-child>img {
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+footer .progress-bar>*{
+    display: inline-block;
+}
+
+footer .progress-bar{
+    white-space: nowrap;
+}
+
+
+footer .bar {
+    height: 5px;
+    background-color: gray;
+    position: relative;
+    border-radius: 5px;
+}
+
+footer .sound .bar {
+    width: 5vw;
+}
+
+footer .progress-bar .bar {
+    width: 25vw;
+}
+footer .progress {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 20%;
+    height: 5px;
+    border-radius: 5px;
+}
+
+footer .play-buttons {
+    text-align: center;
+}
+
+footer .play-buttons *{
+    padding: 10px;
+}
+
+footer #play {
+     color: white;
+}
+
+footer div:first-child .gray:hover{
+    color: white;
+}
+
+footer div:first-child span.gray:hover{
+    text-decoration: underline;
+}
+
+footer .bar:hover .progress{
+    background-color: #ADFF2F;
+}
+
+footer .bar:hover .progress::after {
+	content: "";
+	display: inline-block;
+	height: 10px;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	background-color: white;
+	position: absolute;
+	right: -5px;
+}
+
+footer .play-buttons i:hover {
+	transform: scale(1.5);
+}
+/* footer */
+
+
+/* @media */
+
+@media (max-width:600px) {
+    .hiden600{
+        display:none;
+    }
+    .find600{
+        display: block;
+    }
+    .container nav{
+        padding: 0 8px ;
+        width: 45px ;
+    }
+    .container main,
+    .container main .top{
+        width: calc(100% - 45px);
+    }
+    .container nav li, 
+    .container nav #logo-small,
+    .container nav .account {
+	    padding: 0;
+    }
+    .container nav .home .icon {
+	    width: 100%;
+    }
+    .container nav .home .curent {
+	    border: 0px;
+    }
+    .container nav .account {
+	    width: calc(100%);
+    }
+    .container nav .account > a:first-child {
+	justify-content: center;
+    }
+    .container nav .account .install {
+     width: 20px;
+     margin-right: 0; 
+    }
+
+    .container nav .account > div:last-child {
+    	border-top: 0;
+    }
+    .container nav .account > div:last-child {
+    	padding-top: 5px;
+    }
+
+    .container nav .account .icon {
+	    width: 100%; 
+    }
+}
+
+@media(max-height:400px){
+    .hidenh400{
+        display: none;
+    }
+    main .bottom {
+        margin-top: 0;
+    }
+}
+
+
+
+
+@media (max-width:1100px) {
+    main .bottom .song{
+        width: calc((100% / 4) - 10px);
+    }
+}
+
+@media (max-width:700px) {
+    main .bottom .song{
+        width: calc((100% / 2) - 10px);
+    }
+}
+
+@media (max-width:300px) {
+    main .bottom .song{
+        width: calc((100% / 1) - 10px);
+    }
+}
+
+/*scroll*/
+.he50{
+  scrollbar-width: thin;
+  scrollbar-color: rgb(255, 255,rgba(0, 0, 0, 0.055), 255, 0.055);
+  margin: 3px;
+}
+
+.he50::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 3px;
+  margin-right: 2px;
+}
+
+.he50::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);
+}
+
+.he50::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+
+
+
+/* @media */
+/* debug */
+
+/* debug */
