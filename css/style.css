@@ -501,15 +501,15 @@ footer .play-buttons i:hover {
 	    width: 100%; 
     }
 }
-/* 
+
 @media(max-height:400px){
     .hidenh400{
         display: none;
     }
-    .he80 {
-        height: calc(100%);
+    main .bottom {
+        margin-top: 0;
     }
-} */
+}
 
 
 
