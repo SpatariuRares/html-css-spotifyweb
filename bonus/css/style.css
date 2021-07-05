@@ -107,6 +107,7 @@ body{
 .he80{
     height: calc(100% - 80px);
     min-height: 200px;
+    padding: 20px 0 0 0 ;
 }
 
 .he50{
@@ -159,7 +160,6 @@ nav .gray:focus path{
     width: 220px;
     height: calc(100% - 100px);
     overflow: hidden;
-    padding: 20px 0 0 0 ;
     background-color: black;
     font-size: 12px;
 }
@@ -363,9 +363,6 @@ main .bottom #artist .song img{
 .container footer{
     width: 100%;
     height: 100px;
-	position: fixed;
-	bottom: 0;
-	z-index: 999;
     background-color: #282828;
 }
 
@@ -535,7 +532,7 @@ footer .play-buttons i:hover {
 /*scroll*/
 .he50{
   scrollbar-width: thin;
-  scrollbar-color: rgb(255, 255,rgba(0, 0, 0, 0.055), 255, 0.055);
+  scrollbar-color: rgb(37, 37, 37) rgb(0, 0, 0);
   margin: 3px;
 }
 
