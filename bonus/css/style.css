@@ -554,7 +554,7 @@ footer .play-buttons i:hover {
 
 /* animation */
 nav>*{
-    animation: navigazione 1s linear 0s;
+    animation: navigazione 1s cubic-bezier(.18,.89,.32,1.28) 0s;
     position: relative;
 }
 
@@ -568,7 +568,7 @@ nav>*{
 }
 
 main>.bottom{
-    animation: b-navigazione 1s linear 0s;
+    animation: b-navigazione 1s cubic-bezier(.18,.89,.32,1.28) 0s;
     position: relative;
 }
 
@@ -582,7 +582,7 @@ main>.bottom{
 }
 
 main>.top{
-    animation: t-navigazione 1s linear 0s;
+    animation: t-navigazione 1s cubic-bezier(.18,.89,.32,1.28) 0s;
 }
 
 @keyframes t-navigazione{
