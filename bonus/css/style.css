@@ -552,6 +552,50 @@ footer .play-buttons i:hover {
 }
 
 
+/* animation */
+nav>*{
+    animation: navigazione 1s linear 0s;
+    position: relative;
+}
+
+@keyframes navigazione{
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+main>.bottom{
+    animation: b-navigazione 1s linear 0s;
+    position: relative;
+}
+
+@keyframes b-navigazione{
+    0%{
+        bottom: -100%;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+
+main>.top{
+    animation: t-navigazione 1s linear 0s;
+}
+
+@keyframes t-navigazione{
+    0%{
+        top: -100%;
+    }
+    100%{
+        top: 0;
+    }
+}
+
+/* animation */
+
 
 /* @media */
 /* debug */
