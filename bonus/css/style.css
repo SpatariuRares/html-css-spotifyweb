@@ -109,9 +109,13 @@ body{
     min-height: 200px;
     padding: 20px 0 0 0 ;
 }
+.ohiden{
+    height: calc(100% - 190px);
+    overflow: hidden;
+}
 
 .he50{
-    height: calc(100% - 190px);
+    height: calc(100% - 20px - 16px);
     overflow-y: auto;
 }
 
@@ -210,6 +214,10 @@ nav .gray:focus path{
 
 .container nav .playlist *{
     margin: 8px 0;
+}
+
+.container nav .playlist h3{
+    height: 20px;
 }
 
 
