@@ -109,8 +109,12 @@ body{
     min-height: 200px;
 }
 
-.he50{
+.ohiden{
     height: calc(100% - 190px);
+    overflow: hidden;
+}
+
+.he50{
     overflow-y: auto;
 }
 
